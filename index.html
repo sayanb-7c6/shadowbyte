@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something Awesome is Cooking! - ShadowByte</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        /* --- Google Font --- */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        /* --- Basic Reset & Dark Theme --- */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* --- Main Content Container --- */
+        .container {
+            max-width: 600px;
+        }
+
+        /* --- Studio Logo/Name --- */
+        .studio-name {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #bb86fc; /* A nice accent color */
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        /* --- Main Headline --- */
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.2;
+            text-shadow: 0 0 15px rgba(187, 134, 252, 0.3); /* Subtle glow effect */
+        }
+
+        /* --- Subtitle --- */
+        p {
+            font-size: 1.1rem;
+            margin: 20px 0 40px;
+            opacity: 0.8;
+        }
+        
+        /* --- Email Signup Form --- */
+        .signup-form {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allows stacking on small screens */
+            gap: 10px;
+        }
+
+        .signup-form input[type="email"] {
+            padding: 15px;
+            font-size: 1rem;
+            border: 1px solid #444;
+            border-radius: 8px;
+            background-color: #2c2c2c;
+            color: #e0e0e0;
+            width: 300px;
+            max-width: 100%;
+        }
+
+        .signup-form input[type="email"]::placeholder {
+            color: #888;
+        }
+        
+        .signup-form button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            background-color: #bb86fc; /* Accent color */
+            color: #121212; /* Dark text on button */
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .signup-form button:hover {
+            background-color: #a36ef4;
+            transform: scale(1.05);
+        }
+
+        /* --- Social Media Links --- */
+        .socials {
+            margin-top: 50px;
+        }
+
+        .socials a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.8rem; /* Increased size for icons */
+            transition: color 0.2s ease, transform 0.2s ease;
+            display: inline-block; /* Needed for transform */
+        }
+
+        .socials a:hover {
+            color: #bb86fc; /* Accent color on hover */
+            transform: scale(1.2); /* Make icons pop on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="studio-name">SHADOW BYTE Studio</div>
+
+        <h1>Something Good is Cooking...</h1>
+
+        <p>Our new game is brewing behind the scenes. Be the first to get exclusive updates and know when we launch!</p>
+
+        <form class="signup-form" action="[YOUR_FORM_ACTION_URL]" method="post">
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            <button type="submit">Notify Me!</button>
+        </form>
+
+        <div class="socials">
+            <a href="https://www.instagram.com/shadowbyte.gamestudio" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/shadowbytegames" target="_blank" rel="noopener noreferrer" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>
